@@ -2,19 +2,17 @@ set-face DistractionFree comment
 
 declare-option range-specs distraction_free
 declare-option bool distraction_free_enabled no
-declare-option -hidden str-list distraction_free_above_paragraph
-declare-option -hidden str-list distraction_free_below_paragraph
 
 define-command -hidden distraction-free-update %{
+  set-option window distraction_free %val{timestamp}
   evaluate-commands -draft %{
     execute-keys -no-hooks '<a-i>p<a-;>kglGg<a-;>'
-    set-option window distraction_free_above_paragraph %val{selection_desc}
+    set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
   }
   evaluate-commands -draft %{
     execute-keys -no-hooks '<a-i>pjghGe'
-    set-option window distraction_free_below_paragraph %val{selection_desc}
+    set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
   }
-  set-option window distraction_free "%val{timestamp}:%opt{distraction_free_above_paragraph}|DistractionFree:%opt{distraction_free_below_paragraph}|DistractionFree"
 }
 
 define-command distraction-free-enable -docstring 'Enable distraction-free mode' %{
