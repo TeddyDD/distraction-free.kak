@@ -4,6 +4,8 @@ Distraction-free extension for [Kakoune][].
 
 Turn light on current paragraph.
 
+[![][Demo]][Demo Page]
+
 Installation
 ------------
 
@@ -38,3 +40,5 @@ Faces
 [Kakoune]: http://kakoune.org
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
+[Demo Page]: https://imgur.com/k76oMfu
+[Demo]: https://i.imgur.com/k76oMfu.gif
