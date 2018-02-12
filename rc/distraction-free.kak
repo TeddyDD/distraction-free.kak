@@ -5,13 +5,21 @@ declare-option bool distraction_free_enabled no
 
 define-command -hidden distraction-free-update %{
   set-option window distraction_free %val{timestamp}
-  evaluate-commands -draft %{
-    execute-keys -no-hooks '<a-i>p<a-;>kglGg<a-;>'
-    set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
+  try %{
+    evaluate-commands -draft %{
+      # Use <a-C> <a-space> commands to abort
+      # when the cursor hits the buffer top
+      execute-keys -no-hooks '<space><a-i>p<a-;>gh<a-C><a-space>kglGg<a-;>'
+      set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
+    }
   }
-  evaluate-commands -draft %{
-    execute-keys -no-hooks '<a-i>pjghGe'
-    set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
+  try %{
+    evaluate-commands -draft %{
+      # Use C <a-space> commands to abort
+      # when the cursor hits the buffer end
+      execute-keys -no-hooks '<space><a-i>pghC<a-space>jghGe'
+      set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
+    }
   }
 }
 
