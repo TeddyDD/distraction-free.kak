@@ -1,10 +1,15 @@
+Distraction-free
+================
+
 [![IRC][IRC Badge]][IRC]
 
-Distraction-free extension for [Kakoune][].
+###### [Demo][] | [Usage](#usage) | [Documentation](#commands) | [Contributing](CONTRIBUTING)
 
-Turn light on current paragraph.
+> Distraction-free extension for [Kakoune][].
 
-[![][Demo]][Demo Page]
+###### Features
+
+- Turn light on current paragraph
 
 Installation
 ------------
@@ -40,5 +45,4 @@ Faces
 [Kakoune]: http://kakoune.org
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
-[Demo Page]: https://imgur.com/k76oMfu
-[Demo]: https://i.imgur.com/k76oMfu.gif
+[Demo]: https://imgur.com/k76oMfu
