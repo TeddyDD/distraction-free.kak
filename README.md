@@ -2,6 +2,8 @@
 
 Distraction-free extension for [Kakoune][].
 
+Turn light on current paragraph.
+
 Installation
 ------------
 
