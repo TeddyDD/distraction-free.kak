@@ -1,5 +1,4 @@
-Distraction-free
-================
+# Distraction-free
 
 [![IRC][IRC Badge]][IRC]
 
@@ -11,34 +10,29 @@ Distraction-free
 
 - Turn light on current paragraph
 
-Installation
-------------
+## Installation
 
 ``` sh
 ln --symbolic $PWD/rc $XDG_CONFIG_HOME/kak/autoload/distraction-free
 ```
 
-Usage
------
+## Usage
 
 ``` kak
 alias global df distraction-free-toggle
 ```
 
-Commands
---------
+## Commands
 
 - `distraction-free-enable`: Enable distraction-free mode
 - `distraction-free-disable`: Disable distraction-free mode
 - `distraction-free-toggle`: Toggle distraction-free mode
 
-Options
--------
+## Options
 
 - `distraction_free_enabled` `bool`: Information about the way distraction-free mode is active (Read-only)
 
-Faces
------
+## Faces
 
 - `DistractionFree` `comment`: Distraction-free face
 
