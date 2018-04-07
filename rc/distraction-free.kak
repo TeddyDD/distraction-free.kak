@@ -1,4 +1,4 @@
-set-face DistractionFree comment
+set-face global DistractionFree comment
 
 declare-option range-specs distraction_free
 declare-option bool distraction_free_enabled no
