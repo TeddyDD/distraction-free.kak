@@ -2,9 +2,9 @@
 
 [![IRC][IRC Badge]][IRC]
 
-###### [Demo][] | [Usage](#usage) | [Documentation](#commands) | [Contributing](CONTRIBUTING)
+###### [Demo] | [Usage](#usage) | [Documentation](#commands) | [Contributing](CONTRIBUTING)
 
-> Distraction-free extension for [Kakoune][].
+> Distraction-free extension for [Kakoune].
 
 ###### Features
 
