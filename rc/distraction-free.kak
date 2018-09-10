@@ -9,7 +9,7 @@ define-command -hidden distraction-free-update %{
     evaluate-commands -draft %{
       # Use <a-C> <a-space> commands to abort
       # when the cursor hits the buffer top
-      execute-keys -no-hooks '<space><a-i>p<a-;>gh<a-C><a-space>kglGg<a-;>'
+      execute-keys '<space><a-i>p<a-;>gh<a-C><a-space>kglGg<a-;>'
       set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
     }
   }
@@ -17,7 +17,7 @@ define-command -hidden distraction-free-update %{
     evaluate-commands -draft %{
       # Use C <a-space> commands to abort
       # when the cursor hits the buffer end
-      execute-keys -no-hooks '<space><a-i>pghC<a-space>jghGe'
+      execute-keys '<space><a-i>pghC<a-space>jghGe'
       set-option -add window distraction_free "%val{selection_desc}|DistractionFree"
     }
   }
@@ -26,12 +26,12 @@ define-command -hidden distraction-free-update %{
 define-command distraction-free-enable -docstring 'Enable distraction-free mode' %{
   hook window -group distraction-free NormalKey [jkJKnN] distraction-free-update
   hook window -group distraction-free NormalIdle .* distraction-free-update
-  add-highlighter window ranges distraction_free
+  add-highlighter window/distraction-free ranges distraction_free
   set-option window distraction_free_enabled yes
 }
 
 define-command distraction-free-disable -docstring 'Disable distraction-free mode' %{
-  remove-highlighter window/hlranges_distraction_free
+  remove-highlighter window/distraction-free
   remove-hooks window distraction-free
   set-option window distraction_free_enabled no
 }
