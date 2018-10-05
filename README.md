@@ -12,8 +12,10 @@
 
 ## Installation
 
-``` sh
-ln --symbolic $PWD/rc $XDG_CONFIG_HOME/kak/autoload/distraction-free
+### [Pathogen]
+
+``` kak
+pathogen-infect /home/user/repositories/github.com/alexherbo2/distraction-free.kak
 ```
 
 ## Usage
@@ -40,3 +42,4 @@ alias global df distraction-free-toggle
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
 [Demo]: https://imgur.com/k76oMfu
+[Pathogen]: https://github.com/alexherbo2/pathogen.kak
