@@ -38,7 +38,7 @@ alias global df distraction-free-toggle
 
 - `DistractionFree` `comment`: Distraction-free face
 
-[Kakoune]: http://kakoune.org
+[Kakoune]: https://kakoune.org
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
 [Demo]: https://imgur.com/k76oMfu
